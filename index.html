@@ -3,18 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <title>Code highlight</title>
-    <!--    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.0.0/styles/dark.min.css">-->
+<!--        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.0.0/styles/dark.min.css">-->
     <link rel="stylesheet" href="style.css"/>
-    <!--    <link rel="stylesheet" href="styles/a11y-light.css"/>-->
-    <!--    <link rel="stylesheet" href="styles/darcula.css"/>-->
-    <!--    <link rel="stylesheet" href="styles/gruvbox-light.css"/>-->
+<!--        <link rel="stylesheet" href="styles/a11y-light.css"/>-->
+<!--            <link rel="stylesheet" href="styles/a11y-dark.css"/>-->
+<!--        <link rel="stylesheet" href="styles/darcula.css"/>-->
+<!--        <link rel="stylesheet" href="styles/gruvbox-light.css"/>-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.0.0/highlight.min.js"></script>
     <!-- and it's easy to individually load additional languages -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.0.0/languages/go.min.js"></script>
 </head>
 <body>
 
-<div>put your code below. When the textarea loses focus, the highlighted code will automatically copied to the clipboard</div>
+<div>
+    <p>Putting your code below. When the textarea loses focus, the highlighted code will automatically copied to the clipboard </p>
+    <p><a href="https://github.com/tignioj/copy-highlight-code">See github project</a></p>
+
+</div>
 <textarea rows="20" cols="80" id="textarea">
 package hashCode;
 
@@ -81,9 +86,6 @@ public class User {
     </pre>
 </div>
 
-<script>
-
-</script>
 <script src="index.js"></script>
 </body>
 </html>

@@ -5,10 +5,15 @@
 //                         // … other options aren't changed
 // });
 document.getElementById("button-parse").addEventListener("click", hl)
+document.getElementById("textarea").focus()
 
 // copy event
 document.getElementById("button-copy").addEventListener("click", copyCode)
 document.getElementById('textarea').addEventListener('change', function () {
+    hl()
+    copyCode()
+})
+document.getElementById("textarea").addEventListener("focusout", function () {
     hl()
     copyCode()
 })
@@ -39,8 +44,6 @@ function copyCode() {
         currentRange && selection.addRange(currentRange);
     }
 }
-// document.addEventListener('DOMContentLoaded', (event) => {
-//     document.addEventListener('DOMContentLoaded', (event) => {
         document.addEventListener('DOMContentLoaded', (event) => {
             hl()
             copyCode()
