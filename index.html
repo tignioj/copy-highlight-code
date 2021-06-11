@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Code highlight</title>
+    <!--    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.0.0/styles/dark.min.css">-->
+    <link rel="stylesheet" href="style.css"/>
+    <!--    <link rel="stylesheet" href="styles/a11y-light.css"/>-->
+    <!--    <link rel="stylesheet" href="styles/darcula.css"/>-->
+    <!--    <link rel="stylesheet" href="styles/gruvbox-light.css"/>-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.0.0/highlight.min.js"></script>
+    <!-- and it's easy to individually load additional languages -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.0.0/languages/go.min.js"></script>
+</head>
+<body>
+
+<div>put your code below. When the textarea loses focus, the highlighted code will automatically copied to the clipboard</div>
+<textarea rows="20" cols="80" id="textarea">
+package hashCode;
+
+public class User {
+    private int userNumber;
+    private String userName;
+
+    public User(int userNumber, String userName) {
+        this.userNumber = userNumber;
+        this.userName = userName;
+    }
+
+    /**
+     * 只是简单的调用了Object的equals，重写了等于没写
+     * @param obj
+     * @return
+     */
+    @Override
+    public boolean equals(Object obj) {
+        return super.equals(obj);
+    }
+
+    /**
+     * 只是简单的调用了Object的hashCode，重写了等于没写
+     * @return
+     */
+    @Override
+    public int hashCode() {
+        return super.hashCode();
+    }
+
+    @Override
+    public String toString() {
+        return "User{" +
+                "userNumber=" + userNumber +
+                ", userName='" + userName + '\'' +
+                '}';
+    }
+
+    public int getUserNumber() {
+        return userNumber;
+    }
+
+    public void setUserNumber(int userNumber) {
+        this.userNumber = userNumber;
+    }
+
+    public String getUserName() {
+        return userName;
+    }
+
+    public void setUserName(String userName) {
+        this.userName = userName;
+    }
+}
+</textarea>
+<br/>
+<button id="button-parse">highlight</button>
+<button id="button-copy">Copy</button>
+<span id="copiedNotice"></span>
+
+<div style="overflow: scroll;width: 100%">
+    <pre id="mycode">
+    </pre>
+</div>
+
+<script>
+
+</script>
+<script src="index.js"></script>
+</body>
+</html>

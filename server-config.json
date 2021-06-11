@@ -1,0 +1,12 @@
+{
+  "port": "8088",
+  "root": "./",
+  "content_type": {
+    "html": "text/html",
+    "css": "text/css",
+    "woff": "font/woff2",
+    "js": "text/javascript",
+    "svg": "image/svg+xml",
+    "ico": "image/x-icon"
+  }
+}
