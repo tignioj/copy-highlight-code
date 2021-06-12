@@ -48,7 +48,7 @@ IDEA->VSC->Word->OneNote
 
 ## 方案四(类似方案一(本项目))
 
-可以高度自定义, 动手成本稍微高, 但是我这里都给你搭建好了，直接打开[这里](https://code-highlight.github.io)用就行。
+可以高度自定义, 动手成本稍微高, 但是我这里都给你搭建好了，直接打开[这里](https://tignioj.github.io/copy-highlight-code)用就行。
 
 # 如何自定义高亮
 1. 下载项目
